@@ -1,3 +1,40 @@
-const class_averages = [{class: "APWH", average:""},{class: "APCSP", average:""},{class: "AP Physics 1", average:""}];
-// const students = [{name: "Jotham", apwh_av:"55", apcsp_av:"67", apphys_av:"43"},{name: "Yan", apwh_av:"84", apcsp_av:"90", apphys_av:"92"},
-// {name: "Veronica", apwh_av:"100", apcsp_av:"100", apphys_av:"100"},{name: "Simon", apwh_av:"96", apcsp_av:"0", apphys_av:"92"}];
+const APWH = {
+    teachers: ["Mugge", "Carr", "Rerrick"],
+    average: function(){
+        //try and put apwh averages from students into here
+    },
+    AP: true,
+    homework: 3,
+};
+const CSP = {
+    teachers:["Whalen", "Frusci"],
+    average: function(){
+
+    },
+    AP: true,
+    homework: 2,
+};
+const APP1 = {
+    teachers:["Ferrigno"],
+    average: function(){
+
+    },
+    AP: true,
+    homework:2,
+}
+const physmed = {
+    teachers:["Colangelo"],
+    average: function(){
+
+    },
+    AP: false,
+    homework: 0,
+}
+const phys = {
+    teachers:["Colangelo","Weitzman"],
+    average: function(){
+
+    },
+    AP: false,
+    homework:0,
+}
