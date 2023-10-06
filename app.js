@@ -1,40 +1,50 @@
-const APWH = {
-    teachers: ["Mugge", "Carr", "Rerrick"],
-    average: function(){
-        //try and put apwh averages from students into here
+const classes=[
+    {
+        Title: "APWH",
+        HW: 3,
+        AP: true,
+        required: true,
+        teachers: ["Mugge","Carr", "Rerrick"],
     },
-    AP: true,
-    homework: 3,
-};
-const CSP = {
-    teachers:["Whalen", "Frusci"],
-    average: function(){
+    {
+        Title: "APCSP",
+        HW: 1,
+        AP: true,
+        required: false,
+        teachers: ["Whalen","Frusci"],
 
     },
-    AP: true,
-    homework: 2,
-};
-const APP1 = {
-    teachers:["Ferrigno"],
-    average: function(){
-
+    {
+        Title: "APP1",
+        HW: 2,
+        AP: true,
+        required: false,
+        teachers: ["Ferrigno"],
     },
-    AP: true,
-    homework:2,
-}
-const physmed = {
-    teachers:["Colangelo"],
-    average: function(){
-
+    {
+        Title: "Physmed",
+        HW: 1,
+        AP: false,
+        required: false,
+        teachers: ["Colangelo"],
     },
-    AP: false,
-    homework: 0,
-}
-const phys = {
-    teachers:["Colangelo","Weitzman"],
-    average: function(){
-
+    {
+        Title: "Phys",
+        HW: 1,
+        AP: false,
+        required: false,
+        teachers: ["Colangelo","Weitzman"],
     },
-    AP: false,
-    homework:0,
-}
+    {
+        Title: "Alg2",
+        HW: 1,
+        AP: false,
+        required: true,
+        teachers: ["Partnow","Amoroso"],
+    },
+]
+classes.forEach(function (Title, HW, AP, required, teachers){
+    console.log(Title, HW, AP, required, teachers);
+});
+const APs = classes.filter((x) => x.AP === true);
+console.log(APs);
