@@ -1,4 +1,4 @@
-const classes=[
+const courses=[
     {
         Title: "APWH",
         HW: 3,
@@ -43,8 +43,9 @@ const classes=[
         teachers: ["Partnow","Amoroso"],
     },
 ]
-classes.forEach(function (Title, HW, AP, required, teachers){
-    console.log(Title, HW, AP, required, teachers);
-});
-const APs = classes.filter((x) => x.AP === true);
+courses.forEach((course) => console.log(course.Title));
+
+courses.forEach((course => {course.teachers.forEach(teacher => {console.log(teacher)})}));
+
+const APs = courses.filter((course) => course.AP === true);
 console.log(APs);
