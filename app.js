@@ -45,7 +45,7 @@ const courses=[
 ]
 console.log("All courses:");
 courses.forEach((course) => console.log(course.Title));
-console.log("ALl teachers:");
+console.log("All teachers:");
 courses.forEach((course => {course.teachers.forEach(teacher => {console.log(teacher)})}));
 console.log("All AP courses:");
 const APs = courses.filter((course) => course.AP === true);
